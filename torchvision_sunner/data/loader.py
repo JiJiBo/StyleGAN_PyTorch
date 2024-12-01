@@ -1,5 +1,5 @@
 from torchvision_sunner.constant import *
-from collections import Iterator
+from collections.abc import Iterator
 import torch.utils.data as data
 
 """
