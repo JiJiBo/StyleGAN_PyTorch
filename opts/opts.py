@@ -26,9 +26,9 @@ def presentParameters(args_dict):
 class TrainOptions():
     def __init__(self):
         parser = argparse.ArgumentParser()
-        parser.add_argument('--path', type=str, default='./star/')
+        parser.add_argument('--path', type=str, default=r"/root/autodl-tmp/age_kids")
         parser.add_argument('--epoch', type=int, default=500)
-        parser.add_argument('--batch_size', type=int, default=2)
+        parser.add_argument('--batch_size', type=int, default=64)
         parser.add_argument('--type', type=str, default='style')
         parser.add_argument('--resume', type=str, default='train_result/models/latest.pth')
         parser.add_argument('--det', type=str, default='train_result')
